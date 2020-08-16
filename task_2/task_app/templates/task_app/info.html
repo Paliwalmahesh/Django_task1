@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h2>{{ message }}</h2>
+{% if profile %}
+
+     
+         <label>Name</label>
+         
+         <div>{{ profile.f_name }} {{ profile.l_name }}</div>
+
+         <label>email</label>
+         
+         <div>{{ profile.email }}</div>
+     >
+         <label>phone number</label>
+         
+         <div>{{ profile.ph_no</div>
+         <label>gender</label>
+         
+         <div>{{ profile.gender }}</div>
+   
+
+{% endif %}
+<a href="{% url 'search' %}"><h4>Enter email again?</h4></a><p>
+    <a href="{% url 'register' %}"><h4>Enter user info?</h4></a>
+
+</body>
+</html>

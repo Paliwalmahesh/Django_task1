@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>register page</title>
+</head>
+<body>
+  <form  method='POST'>
+    {% csrf_token %}
+          <div>
+             <label>first name</label>
+             <input type="text" name="f_name"placeholder="enter a name">
+         </div>
+         <br>    
+         <div>
+            <label>last name</label>
+             <input type="text" name="l_name">
+
+         </div>
+          <br>    
+         
+         <div>
+          <label>email</label>
+            <input type="email" name="email">
+         </div>
+          <br>    
+           <div>
+              <label>gender</label>
+              <select name='gender'>
+                <option value=male>male</option>
+                <option value=female>female</option>
+                <option value=other>other</option>
+              </select>
+            </div> 
+          <br>
+           <div>
+               <label>password</label>
+               <input type="password" name="password" placeholder="password">
+           </div>   
+         
+         <div>
+              <label>Phone number</label>
+              <input type="number" name="P_number">
+         </div> 
+          <br>
+          <input type="submit" name="submit">
+  </form>   
+   
+</body>
+</html>

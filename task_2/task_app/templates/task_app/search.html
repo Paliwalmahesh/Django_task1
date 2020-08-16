@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>search user</title>
+</head>
+<body>
+	<form method="POST">
+    {% csrf_token %}
+    <label>Email</label>
+    <input type="text" name="email">
+    <br>
+    <input type="submit" value="Submit email">
+</form>
+
+</body>
+</html>
